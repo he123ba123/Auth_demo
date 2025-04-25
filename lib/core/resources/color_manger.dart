@@ -9,10 +9,12 @@ class ColorsManger {
   static const Color blue = Colors.blue;
 
   static const Color black = Colors.black;
-  static  Color greyHint = Colors.grey.shade600;
+  static Color greyHint = Colors.grey.shade600;
   static const Color grey = Colors.grey;
 
-  static  Color? greyBackground = Colors.grey[100];
+  static const Color red = Colors.red;
 
-  static  Color border = const Color.fromARGB(255, 184, 184, 184);
+  static Color? greyBackground = Colors.grey[100];
+
+  static Color border = const Color.fromARGB(255, 184, 184, 184);
 }

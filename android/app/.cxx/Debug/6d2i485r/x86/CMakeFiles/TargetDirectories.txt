@@ -1,0 +1,2 @@
+D:/projects/auth_demo/android/app/.cxx/Debug/6d2i485r/x86/CMakeFiles/edit_cache.dir
+D:/projects/auth_demo/android/app/.cxx/Debug/6d2i485r/x86/CMakeFiles/rebuild_cache.dir

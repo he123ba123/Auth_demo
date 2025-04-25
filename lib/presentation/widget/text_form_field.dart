@@ -2,17 +2,19 @@ import 'package:auth_demo/core/resources/color_manger.dart';
 import 'package:auth_demo/core/resources/values_manger.dart';
 import 'package:flutter/material.dart';
 
-class CusstomTextFormField extends StatelessWidget {
+class CustomTextFormField extends StatelessWidget {
   final String hinttext;
   final Widget label;
   final TextInputType keyboardType;
   final TextEditingController mycontroller;
-  const CusstomTextFormField(
+  final String? Function(String?)? validator;
+  const CustomTextFormField(
       {super.key,
       required this.hinttext,
       required this.mycontroller,
       required this.label,
-      required this.keyboardType});
+      required this.keyboardType,
+      required this.validator});
 
   @override
   Widget build(BuildContext context) {
@@ -21,8 +23,9 @@ class CusstomTextFormField extends StatelessWidget {
           left: AppPadding.p20,
           right: AppPadding.p20,
           top: AppPadding.p10,
-          bottom: AppPadding.p20),
+          bottom: AppPadding.p10),
       child: TextFormField(
+        validator: validator,
         controller: mycontroller,
         keyboardType: keyboardType,
         decoration: InputDecoration(
